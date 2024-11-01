@@ -1,0 +1,337 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b; /* Dark background for Halloween theme */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    padding-top: 60px; /* Offset for fixed navbar */
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#navbar .nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#navbar .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff7518;
+    margin-right: 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+#navbar ul li a:hover {
+    color: #ff7518; /* Orange color only on hover */
+    font-weight: bold;
+}
+
+.github-link img {
+    filter: invert(0.5); /* Adjust icon color if needed */
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #ff7518;
+    font-family: 'Creepster', cursive;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+/* Main Content Sections */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    padding: 20px 0;
+}
+
+section {
+    background-color: #333333;
+    border: 2px solid #ff7518;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    width: 240px;
+    height: 100%;
+    flex: 0 0 auto;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+section h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ff7518;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(255, 117, 24, 0.8); /* Glow effect on hover */
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+section:hover img {
+    box-shadow: 0px 0px 15px 5px rgba(255, 117, 24, 0.8); /* Orange glow effect on the image */
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #ff7518;
+    margin-bottom: 30px;
+    font-family: 'Creepster', cursive;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background-color: #333333;
+    border: 1px solid #ff7518;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(255, 117, 24, 0.8); /* Stronger glow on hover */
+}
+
+.team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: box-shadow 0.3s;
+}
+
+.team-member:hover img {
+    box-shadow: 0px 0px 15px 5px rgba(255, 117, 24, 0.8); /* Orange glow effect on hover */
+}
+
+.member-info h3 {
+    font-size: 1.1em;
+    color: #ff7518;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+.project-description {
+    text-align: left;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+    border: 2px solid #ff7518;
+}
+
+.project-description h2 {
+    font-size: 1.8em;
+    color: #ff7518;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Creepster', cursive;
+}
+
+.project-description p {
+    font-size: 1em;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#video-demo {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 20px 0;
+    text-align: left;
+}
+
+#video-demo h2 {
+    font-size: 1.8em;
+    color: #ff7518; /* Orange color for text */
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    text-align: center;
+}
+
+#video-demo iframe {
+    max-width: inherit;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* General Section Styling */
+#source-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 900px;
+    background-color: #2b2e3d; /* Dark background color */
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+/* Container for text and image side-by-side */
+.source-code-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Text Section Styling */
+.source-code-text {
+    max-width: 40%;
+}
+
+.source-code-text h2 {
+    font-size: 2em;
+    color: #ff7518; /* Yellow color for "TRAFFIC LIGHT PROJECT" */
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.source-code-text h3 {
+    font-size: 1.8em;
+    color: #ffffff; /* White color for "SOURCE CODE" */
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0;
+}
+
+/* GitHub Button Styling */
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7518; /* Button yellow background */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #ff7518; /* Darker yellow on hover */
+}
+
+/* Scrollable Image Container */
+.code-image-scroll {
+    max-height: 300px; /* Increase the max height for a larger display area */
+    overflow-y: scroll; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Adds shadow around the container */
+    width: 700px; /* Increase width for a larger display */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Image Styling */
+.code-image-scroll img {
+    width: 100%; /* Ensures the image fills the container width */
+    height: auto; /* Maintains aspect ratio */
+}
+
+

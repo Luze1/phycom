@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Parking Monitoring System - Halloween Theme</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="logo">PETER PARKDUI</div>
+        <ul>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#source-code">Source Code</a></li>
+          <li><a href="#video-demo">Video Demo</a></li>
+          <li><a href="#member">Member</a></li>
+          <li><a href="https://taratipt.github.io/PhyComPJWeb/" target="_blank" class="parkio-button">Park.io</a></li>
+        </ul>
+      </div>
+      <a
+        href="https://github.com/TaratipT/PhyComPJWeb/tree/main"
+        target="_blank"
+        class="github-link"
+      >
+        <img src="img/github-icon.png" alt="GitHub" width="24" height="24" />
+      </a>
+    </nav>
+
+    <header>
+      <h1>Peter Parkdui</h1>
+      <p>Car Parking Monitoring System</p>
+    </header>
+
+    <main>
+      <!-- Image of LCD Display -->
+      <section id="lcd-display">
+        <h2>LCD Display</h2>
+        <img
+          src="img/lcd-display.jpg"
+          alt="LCD Display showing Hello World message"
+        />
+      </section>
+
+      <!-- Image of Servo Motor -->
+      <section id="servo-motor">
+        <h2>Servo Motor</h2>
+        <img src="img/servo-motor.jpg" alt="Tower Pro SG90 Servo Motor" />
+      </section>
+
+      <!-- Image of IR Sensors -->
+      <section id="ir-sensors">
+        <h2>IR Sensors</h2>
+        <img
+          src="img/ir-sensor.jpg"
+          alt="Pair of IR Sensors for object detection"
+        />
+      </section>
+
+      <!-- Image of Arduino Board -->
+      <section id="arduino-uno">
+        <h2>Arduino UNO</h2>
+        <img src="img/arduino-board.jpg" alt="Arduino UNO Board" />
+      </section>
+
+      <!-- Image of Breadboard -->
+      <section id="breadboard">
+        <h2>Breadboard</h2>
+        <img src="img/breadboard.jpg" alt="Breadboard" />
+      </section>
+
+      <!-- Image of Jumper Wires -->
+      <section id="jumper-wires">
+        <h2>Jumper Wires</h2>
+        <img src="img/jumper-wires.webp" alt="Jumper Wires" />
+      </section>
+    </main>
+
+    <!-- Project Description Section -->
+    <section id="about-section" class="project-description">
+      <h2>ที่มาและความสำคัญ</h2>
+      <p>
+        โปรเจกต์นี้มีวัตถุประสงค์เพื่อแก้ไขปัญหาการเสียเวลาในการค้นหาที่จอดรถเมื่อพื้นที่จอดเต็มแล้ว
+        โดยระบบสามารถแจ้งจำนวนที่จอดรถที่ยังว่างอยู่
+        ทำให้ผู้ใช้สามารถเข้าจอดได้อย่างมีประสิทธิภาพ
+        โดยไม่เสียเวลาในกรณีที่ที่จอดเต็ม
+        และยังมีการบันทึกประวัติการเข้าออกของรถที่เข้าจอดผ่านเว็บไซต์
+      </p>
+      <h2>ขอบเขตโครงงาน</h2>
+      <p>
+        - การตรวจจับและควบคุมการเข้าออกยานพาหนะ:<br> ใช้เซนเซอร์อินฟราเรด (IR Sensor)
+        เพื่อตรวจจับยานพาหนะที่ผ่านและสั่งการให้มอเตอร์เซอร์โว (Servo Motor)
+        <br>เปิดไม้กั้นเมื่อมีพื้นที่จอดว่าง
+        <br> 
+        - การแสดงข้อมูลจำนวนที่จอดรถที่เหลือ:<br> แสดงจำนวนพื้นที่จอดที่ว่างตรงจุดทางเข้า
+        เพื่อให้ยานพาหนะทราบจำนวนพื้นที่จอดรถคงเหลือก่อนเข้าสู่บริเวณที่จอดรถ
+        </br>
+        - การแสดงผลข้อมูลบนเว็บไซต์แบบเรียลไทม์:<br>
+        แสดงจำนวนพื้นที่จอดรถที่ว่างและประวัติการเข้า-ออกของยานพาหนะบนเว็บไซต์แบบเรียลไทม์  
+    </p>
+    </section>
+
+    <section id="source-code">
+      <div class="source-code-container">
+        <div class="source-code-text">
+          <h2>PETER PARKDUI PROJECT</h2>
+          <h3>SOURCE CODE</h3>
+        </div>
+        <div class="code-image-scroll">
+          <img src="img/carbon.png" alt="Source Code Screenshot" />
+        </div>
+      </div>
+    </section>
+
+    <section id="video-demo">
+      <h2>Video Demo</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/msGQOO6f3h0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="member" class="about-us">
+      <h2>About Us</h2>
+      <div class="team-container">
+        <!-- First Row -->
+        <div class="team-member">
+          <img src="img/zeun.jpg" alt="Member 1" />
+          <div class="member-info">
+            <h3>นายธราธิป เตชะธาดาเดช</h3>
+            <p>66070086</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="img/fook.jpg" alt="Member 2" />
+          <div class="member-info">
+            <h3>นายนรเศรษฐ์ บุปผา</h3>
+            <p>66070098</p>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="team-member">
+          <img src="img/auto.png" alt="Member 3" />
+          <div class="member-info">
+            <h3>นายนิจิตพงศ์ ทิพย์รักษ์</h3>
+            <p>66070107</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="img/mon.JPG" alt="Member 4" />
+          <div class="member-info">
+            <h3>นายนพรุจ ธะสุนทร</h3>
+            <p>66070094</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
